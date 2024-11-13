@@ -3,7 +3,54 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="pragma" content="no-cache">
-    <link href="~/Content/LouisStyle.css" rel="stylesheet" />
+    <style>
+        .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 21px 0 0 41px;
+    color: #b1b1b1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 38px;
+    cursor: pointer;
+}
+
+.nav-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.nav-text {
+    white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+    .sidebar-nav {
+        padding-left: 20px;
+    }
+
+    .nav-text {
+        white-space: normal;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+    </style>
 </head>
 <body>
     <nav class="sidebar-nav" aria-label="Sidebar Navigation">
